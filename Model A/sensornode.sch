@@ -5711,10 +5711,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="2.54" y1="55.88" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="78.74" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="78.74" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="8"/>
-<wire x1="83.82" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="7.62" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
