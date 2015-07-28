@@ -5749,7 +5749,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
-<part name="U$1" library="Seeed-OPL-ic" deviceset="MCU-STM32F401RBT6(LQFP64)" device=""/>
+<part name="U1" library="Seeed-OPL-ic" deviceset="MCU-STM32F401RBT6(LQFP64)" device=""/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
@@ -5759,19 +5759,19 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="5X3"/>
 <part name="Y2" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="5X3"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M05" device="1.27MM"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M05" device="1.27MM"/>
-<part name="D3" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="SWD" library="SparkFun-Connectors" deviceset="M05" device="1.27MM"/>
+<part name="SERIAL_1" library="SparkFun-Connectors" deviceset="M05" device="1.27MM"/>
+<part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
-<part name="JP4" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
-<part name="JP5" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
-<part name="J2" library="Seeed-OPL-Connector" deviceset="MICRO-USB-SMD-TYPE-AB-R/A(ST-USB-001L)" device=""/>
-<part name="CN1" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
+<part name="PORT_A" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
+<part name="PORT_B" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
+<part name="SPI_2" library="SparkFun-Connectors" deviceset="M05X2" device="PTH"/>
+<part name="USB" library="Seeed-OPL-Connector" deviceset="MICRO-USB-SMD-TYPE-AB-R/A(ST-USB-001L)" device=""/>
+<part name="VIN" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="LED2" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="JP7" library="SparkFun-Connectors" deviceset="M06" device="SILK_FEMALE_PTH"/>
+<part name="SERIAL_2" library="SparkFun-Connectors" deviceset="M06" device="SILK_FEMALE_PTH"/>
 <part name="Q1" library="Seeed-OPL-Transistor" deviceset="SMD-TRANSISTORS-PNP-25V-500MA(SOT-23)" device=""/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="JP10" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
@@ -5784,8 +5784,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="D1" library="Seeed-OPL-Diode" deviceset="SMD-DIODE-SCHOTTKY-40V-500MA(SOD-123)" device="" value="40V-500MA"/>
 <part name="F1" library="Seeed-OPL-fuse" deviceset="SMD-PPTC-500MA(1206)" device="" value="500MA"/>
-<part name="SW1" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
-<part name="SW2" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
+<part name="BTN1" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
+<part name="RESET" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -5813,7 +5814,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="GND1" gate="1" x="111.76" y="-5.08"/>
 <instance part="C12" gate="G$1" x="13.97" y="76.2" rot="R90"/>
 <instance part="C13" gate="G$1" x="13.97" y="83.82" rot="R90"/>
-<instance part="U$1" gate="G$1" x="73.66" y="57.15"/>
+<instance part="U1" gate="G$1" x="73.66" y="57.15"/>
 <instance part="R1" gate="G$1" x="144.78" y="105.41" rot="R270"/>
 <instance part="SUPPLY3" gate="VDD" x="1.27" y="34.29"/>
 <instance part="SUPPLY4" gate="VDD" x="39.37" y="91.44"/>
@@ -5823,19 +5824,19 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="Y1" gate="G$1" x="19.05" y="81.28" rot="R90"/>
 <instance part="Y2" gate="G$1" x="19.05" y="63.5" rot="R90"/>
 <instance part="R2" gate="G$1" x="59.69" y="105.41" rot="R180"/>
-<instance part="JP1" gate="G$1" x="194.31" y="39.37"/>
-<instance part="JP2" gate="G$1" x="194.31" y="16.51"/>
-<instance part="D3" gate="G$1" x="135.89" y="5.08"/>
+<instance part="SWD" gate="G$1" x="194.31" y="39.37"/>
+<instance part="SERIAL_1" gate="G$1" x="194.31" y="16.51"/>
+<instance part="LED1" gate="G$1" x="135.89" y="5.08"/>
 <instance part="R3" gate="G$1" x="135.89" y="13.97" rot="R90"/>
-<instance part="JP3" gate="G$1" x="255.27" y="-5.08"/>
-<instance part="JP4" gate="G$1" x="255.27" y="16.51"/>
-<instance part="JP5" gate="G$1" x="255.27" y="39.37"/>
-<instance part="J2" gate="G$1" x="158.75" y="52.07" rot="R180"/>
-<instance part="CN1" gate="G$1" x="293.37" y="50.8" rot="R180"/>
+<instance part="PORT_A" gate="G$1" x="255.27" y="-5.08"/>
+<instance part="PORT_B" gate="G$1" x="255.27" y="16.51"/>
+<instance part="SPI_2" gate="G$1" x="255.27" y="39.37"/>
+<instance part="USB" gate="G$1" x="158.75" y="52.07" rot="R180"/>
+<instance part="VIN" gate="G$1" x="293.37" y="50.8" rot="R180"/>
 <instance part="JP6" gate="G$1" x="41.91" y="125.73"/>
-<instance part="D2" gate="G$1" x="149.86" y="5.08"/>
+<instance part="LED2" gate="G$1" x="149.86" y="5.08"/>
 <instance part="R4" gate="G$1" x="149.86" y="13.97" rot="R90"/>
-<instance part="JP7" gate="G$1" x="198.12" y="-6.35"/>
+<instance part="SERIAL_2" gate="G$1" x="198.12" y="-6.35"/>
 <instance part="Q1" gate="G$1" x="2.54" y="29.21"/>
 <instance part="R6" gate="G$1" x="-5.08" y="29.21" rot="R180"/>
 <instance part="JP10" gate="G$1" x="367.03" y="82.55" rot="R180"/>
@@ -5848,15 +5849,16 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="R10" gate="G$1" x="330.2" y="62.23" rot="R270"/>
 <instance part="D1" gate="G$1" x="336.55" y="67.31"/>
 <instance part="F1" gate="G$1" x="142.24" y="39.37"/>
-<instance part="SW1" gate="G$1" x="161.29" y="129.54"/>
-<instance part="SW2" gate="G$1" x="177.8" y="102.87"/>
+<instance part="BTN1" gate="G$1" x="161.29" y="129.54"/>
+<instance part="RESET" gate="G$1" x="177.8" y="102.87"/>
+<instance part="JP3" gate="G$1" x="124.46" y="24.13"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VSS_1"/>
+<pinref part="U1" gate="G$1" pin="VSS_1"/>
 <wire x1="90.17" y1="22.86" x2="90.17" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="90.17" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
@@ -5877,26 +5879,26 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="111.76" y="-2.54"/>
 <wire x1="83.82" y1="-2.54" x2="57.15" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="VSS_4"/>
+<pinref part="U1" gate="G$1" pin="VSS_4"/>
 <wire x1="58.42" y1="7.62" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="57.15" y1="7.62" x2="57.15" y2="22.86" width="0.1524" layer="91"/>
 <junction x="57.15" y="7.62"/>
 <wire x1="57.15" y1="-2.54" x2="57.15" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="135.89" y1="-2.54" x2="135.89" y2="0" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="-2.54" x2="135.89" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="135.89" y="-2.54"/>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="149.86" y1="0" x2="149.86" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<pinref part="U1" gate="G$1" pin="VSSA"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="39.37" y1="48.26" x2="8.89" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="8.89" y1="48.26" x2="8.89" y2="44.45" width="0.1524" layer="91"/>
 <junction x="8.89" y="48.26"/>
-<pinref part="U$1" gate="G$1" pin="VSS_3"/>
+<pinref part="U1" gate="G$1" pin="VSS_3"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="57.15" y1="91.44" x2="57.15" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -5936,7 +5938,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="VSS_2"/>
+<pinref part="U1" gate="G$1" pin="VSS_2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="107.95" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="73.66" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
@@ -5948,63 +5950,63 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="172.72" y1="68.58" x2="173.99" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="173.99" y1="68.58" x2="173.99" y2="91.44" width="0.1524" layer="91"/>
 <junction x="176.53" y="68.58"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
+<pinref part="USB" gate="G$1" pin="GND"/>
 <wire x1="147.32" y1="57.15" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <junction x="147.32" y="68.58"/>
 <junction x="172.72" y="68.58"/>
-<pinref part="J2" gate="G$1" pin="GND@2"/>
+<pinref part="USB" gate="G$1" pin="GND@2"/>
 <wire x1="172.72" y1="50.8" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="53.34" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="102.87" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="91.44" x2="173.99" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GND@1"/>
+<pinref part="USB" gate="G$1" pin="GND@1"/>
 <wire x1="172.72" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="172.72" y="53.34"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="SWD" gate="G$1" pin="3"/>
 <wire x1="201.93" y1="39.37" x2="212.09" y2="39.37" width="0.1524" layer="91"/>
 <label x="208.28" y="39.37" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="SERIAL_1" gate="G$1" pin="1"/>
 <wire x1="201.93" y1="11.43" x2="212.09" y2="11.43" width="0.1524" layer="91"/>
 <label x="208.28" y="11.43" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="SERIAL_1" gate="G$1" pin="2"/>
 <wire x1="212.09" y1="13.97" x2="201.93" y2="13.97" width="0.1524" layer="91"/>
 <label x="208.28" y="13.97" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="1"/>
+<pinref part="SERIAL_2" gate="G$1" pin="1"/>
 <wire x1="212.09" y1="-11.43" x2="203.2" y2="-11.43" width="0.1524" layer="91"/>
 <label x="208.28" y="-11.43" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="2"/>
+<pinref part="SERIAL_2" gate="G$1" pin="2"/>
 <wire x1="212.09" y1="-8.89" x2="203.2" y2="-8.89" width="0.1524" layer="91"/>
 <label x="208.28" y="-8.89" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="PORT_B" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="21.59" x2="247.65" y2="21.59" width="0.1524" layer="91"/>
 <label x="238.76" y="21.59" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="PORT_A" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="0" x2="247.65" y2="0" width="0.1524" layer="91"/>
 <label x="238.76" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="SPI_2" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="44.45" x2="247.65" y2="44.45" width="0.1524" layer="91"/>
 <label x="238.76" y="44.45" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="VIN" gate="G$1" pin="1"/>
 <wire x1="295.91" y1="48.26" x2="303.53" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="303.53" y1="48.26" x2="303.53" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -6035,7 +6037,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB11"/>
+<pinref part="U1" gate="G$1" pin="PB11"/>
 <wire x1="87.63" y1="22.86" x2="87.63" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="87.63" y1="10.16" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
@@ -6043,7 +6045,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC14-OSC32_IN"/>
+<pinref part="U1" gate="G$1" pin="PC14-OSC32_IN"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="39.37" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="71.12" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
@@ -6055,7 +6057,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC15-OSC32_OUT"/>
+<pinref part="U1" gate="G$1" pin="PC15-OSC32_OUT"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="39.37" y1="68.58" x2="19.05" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="19.05" y1="68.58" x2="19.05" y2="76.2" width="0.1524" layer="91"/>
@@ -6069,7 +6071,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD0-OSC_IN"/>
+<pinref part="U1" gate="G$1" pin="PD0-OSC_IN"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="39.37" y1="66.04" x2="19.05" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="19.05" y1="66.04" x2="16.51" y2="66.04" width="0.1524" layer="91"/>
@@ -6079,7 +6081,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD1-OSC_OUT"/>
+<pinref part="U1" gate="G$1" pin="PD1-OSC_OUT"/>
 <wire x1="39.37" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="63.5" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="58.42" x2="19.05" y2="58.42" width="0.1524" layer="91"/>
@@ -6093,7 +6095,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="NRST" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="NRST"/>
+<pinref part="U1" gate="G$1" pin="NRST"/>
 <wire x1="39.37" y1="60.96" x2="31.75" y2="60.96" width="0.1524" layer="91"/>
 <label x="29.21" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -6104,18 +6106,18 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="133.35" y1="97.79" x2="144.78" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="97.79" x2="144.78" y2="100.33" width="0.1524" layer="91"/>
 <junction x="144.78" y="100.33"/>
-<pinref part="SW2" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="102.87" x2="154.94" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="102.87" x2="154.94" y2="97.79" width="0.1524" layer="91"/>
 <junction x="144.78" y="97.79"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
+<pinref part="SWD" gate="G$1" pin="5"/>
 <wire x1="201.93" y1="44.45" x2="212.09" y2="44.45" width="0.1524" layer="91"/>
 <label x="208.28" y="44.45" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="9"/>
+<pinref part="SPI_2" gate="G$1" pin="9"/>
 <wire x1="238.76" y1="34.29" x2="247.65" y2="34.29" width="0.1524" layer="91"/>
 <label x="238.76" y="34.29" size="1.778" layer="95"/>
 </segment>
@@ -6123,7 +6125,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <net name="BOOT0" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="BOOT0"/>
+<pinref part="U1" gate="G$1" pin="BOOT0"/>
 <wire x1="64.77" y1="105.41" x2="64.77" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="105.41" x2="64.77" y2="125.73" width="0.1524" layer="91"/>
 <junction x="64.77" y="105.41"/>
@@ -6134,51 +6136,51 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="135.89" y1="8.89" x2="135.89" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="7.62" x2="149.86" y2="8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="SWD" gate="G$1" pin="1"/>
 <wire x1="201.93" y1="34.29" x2="212.09" y2="34.29" width="0.1524" layer="91"/>
 <label x="208.28" y="34.29" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
+<pinref part="SERIAL_1" gate="G$1" pin="3"/>
 <wire x1="212.09" y1="16.51" x2="201.93" y2="16.51" width="0.1524" layer="91"/>
 <label x="208.28" y="16.51" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="3"/>
+<pinref part="SERIAL_2" gate="G$1" pin="3"/>
 <wire x1="212.09" y1="-6.35" x2="203.2" y2="-6.35" width="0.1524" layer="91"/>
 <label x="208.28" y="-6.35" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="3"/>
+<pinref part="PORT_B" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="19.05" x2="247.65" y2="19.05" width="0.1524" layer="91"/>
 <label x="238.76" y="19.05" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
+<pinref part="PORT_A" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="-2.54" x2="247.65" y2="-2.54" width="0.1524" layer="91"/>
 <label x="238.76" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="SPI_2" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="44.45" x2="262.89" y2="44.45" width="0.1524" layer="91"/>
 <label x="266.7" y="44.45" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD_2"/>
+<pinref part="U1" gate="G$1" pin="VDD_2"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="107.95" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="VDD" pin="VDD"/>
@@ -6191,7 +6193,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="110.49" x2="110.49" y2="110.49" width="0.1524" layer="91"/>
 <junction x="110.49" y="110.49"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="BTN1" gate="G$1" pin="2"/>
 <wire x1="168.91" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="129.54" x2="175.26" y2="110.49" width="0.1524" layer="91"/>
 </segment>
@@ -6207,7 +6209,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="SUPPLY1" gate="VDD" pin="VDD"/>
 <wire x1="114.3" y1="19.05" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="19.05" x2="114.3" y2="19.05" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD_1"/>
+<pinref part="U1" gate="G$1" pin="VDD_1"/>
 <wire x1="92.71" y1="19.05" x2="92.71" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="92.71" y1="19.05" x2="99.06" y2="19.05" width="0.1524" layer="91"/>
@@ -6218,16 +6220,17 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="99.06" y="19.05"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD_4"/>
+<pinref part="U1" gate="G$1" pin="VDD_4"/>
 <wire x1="59.69" y1="22.86" x2="59.69" y2="11.43" width="0.1524" layer="91"/>
 <wire x1="59.69" y1="11.43" x2="66.04" y2="11.43" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="11.43" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
 <junction x="66.04" y="7.62"/>
+<label x="69.85" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDDA"/>
+<pinref part="U1" gate="G$1" pin="VDDA"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="39.37" y1="45.72" x2="16.51" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="16.51" y1="45.72" x2="16.51" y2="44.45" width="0.1524" layer="91"/>
@@ -6243,7 +6246,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="5.08" y="34.29"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD_3"/>
+<pinref part="U1" gate="G$1" pin="VDD_3"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="54.61" y1="91.44" x2="49.53" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="49.53" y1="91.44" x2="49.53" y2="96.52" width="0.1524" layer="91"/>
@@ -6251,7 +6254,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="49.53" y1="91.44" x2="39.37" y2="91.44" width="0.1524" layer="91"/>
 <junction x="49.53" y="91.44"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="VBAT"/>
+<pinref part="U1" gate="G$1" pin="VBAT"/>
 <junction x="39.37" y="76.2"/>
 <wire x1="39.37" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="91.44" x2="39.37" y2="76.2" width="0.1524" layer="91"/>
@@ -6260,96 +6263,96 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="SWCLK" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="SWD" gate="G$1" pin="2"/>
 <wire x1="201.93" y1="36.83" x2="212.09" y2="36.83" width="0.1524" layer="91"/>
 <label x="208.28" y="36.83" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA14"/>
+<pinref part="U1" gate="G$1" pin="PA14"/>
 <wire x1="92.71" y1="91.44" x2="92.71" y2="100.33" width="0.1524" layer="91"/>
 <label x="92.71" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="SWD" gate="G$1" pin="4"/>
 <wire x1="201.93" y1="41.91" x2="212.09" y2="41.91" width="0.1524" layer="91"/>
 <label x="208.28" y="41.91" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA13"/>
+<pinref part="U1" gate="G$1" pin="PA13"/>
 <wire x1="107.95" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
 <label x="114.3" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B7" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
+<pinref part="SERIAL_1" gate="G$1" pin="4"/>
 <wire x1="212.09" y1="19.05" x2="201.93" y2="19.05" width="0.1524" layer="91"/>
 <label x="208.28" y="19.05" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB7"/>
+<pinref part="U1" gate="G$1" pin="PB7"/>
 <wire x1="67.31" y1="100.33" x2="67.31" y2="91.44" width="0.1524" layer="91"/>
 <label x="67.31" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="B6" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
+<pinref part="SERIAL_1" gate="G$1" pin="5"/>
 <wire x1="212.09" y1="21.59" x2="201.93" y2="21.59" width="0.1524" layer="91"/>
 <label x="208.28" y="21.59" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB6"/>
+<pinref part="U1" gate="G$1" pin="PB6"/>
 <wire x1="69.85" y1="100.33" x2="69.85" y2="91.44" width="0.1524" layer="91"/>
 <label x="69.85" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
-<pinref part="JP7" gate="G$1" pin="5"/>
+<pinref part="SERIAL_2" gate="G$1" pin="5"/>
 <wire x1="212.09" y1="-1.27" x2="203.2" y2="-1.27" width="0.1524" layer="91"/>
 <label x="208.28" y="-1.27" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA2"/>
+<pinref part="U1" gate="G$1" pin="PA2"/>
 <wire x1="39.37" y1="38.1" x2="31.75" y2="38.1" width="0.1524" layer="91"/>
 <label x="31.75" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
-<pinref part="JP7" gate="G$1" pin="4"/>
+<pinref part="SERIAL_2" gate="G$1" pin="4"/>
 <wire x1="212.09" y1="-3.81" x2="203.2" y2="-3.81" width="0.1524" layer="91"/>
 <label x="208.28" y="-3.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA3"/>
+<pinref part="U1" gate="G$1" pin="PA3"/>
 <wire x1="54.61" y1="22.86" x2="54.61" y2="16.51" width="0.1524" layer="91"/>
 <label x="54.61" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA1"/>
+<pinref part="U1" gate="G$1" pin="PA1"/>
 <wire x1="39.37" y1="40.64" x2="31.75" y2="40.64" width="0.1524" layer="91"/>
 <label x="31.75" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
+<pinref part="PORT_A" gate="G$1" pin="4"/>
 <wire x1="271.78" y1="-2.54" x2="262.89" y2="-2.54" width="0.1524" layer="91"/>
 <label x="267.97" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="4"/>
+<pinref part="PORT_B" gate="G$1" pin="4"/>
 <wire x1="271.78" y1="19.05" x2="262.89" y2="19.05" width="0.1524" layer="91"/>
 <label x="267.97" y="19.05" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA0-WKUP"/>
+<pinref part="U1" gate="G$1" pin="PA0-WKUP"/>
 <wire x1="19.05" y1="43.18" x2="39.37" y2="43.18" width="0.1524" layer="91"/>
 <label x="31.75" y="43.18" size="1.778" layer="95"/>
 <wire x1="19.05" y1="43.18" x2="19.05" y2="24.13" width="0.1524" layer="91"/>
@@ -6359,140 +6362,140 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="C3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC3"/>
+<pinref part="U1" gate="G$1" pin="PC3"/>
 <wire x1="31.75" y1="50.8" x2="39.37" y2="50.8" width="0.1524" layer="91"/>
 <label x="31.75" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="6"/>
+<pinref part="PORT_B" gate="G$1" pin="6"/>
 <wire x1="271.78" y1="16.51" x2="262.89" y2="16.51" width="0.1524" layer="91"/>
 <label x="267.97" y="16.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC2"/>
+<pinref part="U1" gate="G$1" pin="PC2"/>
 <wire x1="31.75" y1="53.34" x2="39.37" y2="53.34" width="0.1524" layer="91"/>
 <label x="31.75" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="8"/>
+<pinref part="PORT_B" gate="G$1" pin="8"/>
 <wire x1="271.78" y1="13.97" x2="262.89" y2="13.97" width="0.1524" layer="91"/>
 <label x="267.97" y="13.97" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC1"/>
+<pinref part="U1" gate="G$1" pin="PC1"/>
 <wire x1="31.75" y1="55.88" x2="39.37" y2="55.88" width="0.1524" layer="91"/>
 <label x="31.75" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC0"/>
+<pinref part="U1" gate="G$1" pin="PC0"/>
 <wire x1="31.75" y1="58.42" x2="39.37" y2="58.42" width="0.1524" layer="91"/>
 <label x="31.75" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC13-TAMPER-RTC"/>
+<pinref part="U1" gate="G$1" pin="PC13-TAMPER-RTC"/>
 <wire x1="39.37" y1="73.66" x2="31.75" y2="73.66" width="0.1524" layer="91"/>
 <label x="30.48" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B9" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB9"/>
+<pinref part="U1" gate="G$1" pin="PB9"/>
 <wire x1="59.69" y1="91.44" x2="59.69" y2="100.33" width="0.1524" layer="91"/>
 <label x="59.69" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="7"/>
+<pinref part="PORT_B" gate="G$1" pin="7"/>
 <wire x1="238.76" y1="13.97" x2="247.65" y2="13.97" width="0.1524" layer="91"/>
 <label x="238.76" y="13.97" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="7"/>
+<pinref part="PORT_A" gate="G$1" pin="7"/>
 <wire x1="238.76" y1="-7.62" x2="247.65" y2="-7.62" width="0.1524" layer="91"/>
 <label x="238.76" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB8"/>
+<pinref part="U1" gate="G$1" pin="PB8"/>
 <wire x1="62.23" y1="100.33" x2="62.23" y2="91.44" width="0.1524" layer="91"/>
 <label x="62.23" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="5"/>
+<pinref part="PORT_B" gate="G$1" pin="5"/>
 <wire x1="238.76" y1="16.51" x2="247.65" y2="16.51" width="0.1524" layer="91"/>
 <label x="238.76" y="16.51" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="5"/>
+<pinref part="PORT_A" gate="G$1" pin="5"/>
 <wire x1="238.76" y1="-5.08" x2="247.65" y2="-5.08" width="0.1524" layer="91"/>
 <label x="238.76" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB5"/>
+<pinref part="U1" gate="G$1" pin="PB5"/>
 <wire x1="72.39" y1="100.33" x2="72.39" y2="91.44" width="0.1524" layer="91"/>
 <label x="72.39" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="C12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC12"/>
+<pinref part="U1" gate="G$1" pin="PC12"/>
 <wire x1="82.55" y1="100.33" x2="82.55" y2="91.44" width="0.1524" layer="91"/>
 <label x="82.55" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="C11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC11"/>
+<pinref part="U1" gate="G$1" pin="PC11"/>
 <wire x1="85.09" y1="100.33" x2="85.09" y2="91.44" width="0.1524" layer="91"/>
 <label x="85.09" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="C10" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC10"/>
+<pinref part="U1" gate="G$1" pin="PC10"/>
 <wire x1="87.63" y1="100.33" x2="87.63" y2="91.44" width="0.1524" layer="91"/>
 <label x="87.63" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA15"/>
+<pinref part="U1" gate="G$1" pin="PA15"/>
 <wire x1="90.17" y1="100.33" x2="90.17" y2="91.44" width="0.1524" layer="91"/>
 <label x="90.17" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="DM"/>
+<pinref part="USB" gate="G$1" pin="DM"/>
 <wire x1="147.32" y1="49.53" x2="129.54" y2="49.53" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="49.53" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PA11"/>
+<pinref part="U1" gate="G$1" pin="PA11"/>
 <wire x1="129.54" y1="66.04" x2="107.95" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA12"/>
+<pinref part="U1" gate="G$1" pin="PA12"/>
 <wire x1="107.95" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="68.58" x2="132.08" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="DP"/>
+<pinref part="USB" gate="G$1" pin="DP"/>
 <wire x1="132.08" y1="52.07" x2="147.32" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
 <wire x1="127" y1="39.37" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PA9"/>
+<pinref part="U1" gate="G$1" pin="PA9"/>
 <wire x1="127" y1="60.96" x2="107.95" y2="60.96" width="0.1524" layer="91"/>
 <label x="128.27" y="39.37" size="1.778" layer="95"/>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -6515,12 +6518,12 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="B12" class="0">
 <segment>
-<pinref part="JP5" gate="G$1" pin="10"/>
+<pinref part="SPI_2" gate="G$1" pin="10"/>
 <wire x1="271.78" y1="34.29" x2="262.89" y2="34.29" width="0.1524" layer="91"/>
 <label x="267.97" y="34.29" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB12"/>
+<pinref part="U1" gate="G$1" pin="PB12"/>
 <wire x1="116.84" y1="38.1" x2="107.95" y2="38.1" width="0.1524" layer="91"/>
 <label x="113.03" y="38.1" size="1.778" layer="95"/>
 </segment>
@@ -6532,17 +6535,17 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="-20.32" y1="29.21" x2="-10.16" y2="29.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="PORT_B" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="21.59" x2="262.89" y2="21.59" width="0.1524" layer="91"/>
 <label x="267.97" y="21.59" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="PORT_A" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="0" x2="262.89" y2="0" width="0.1524" layer="91"/>
 <label x="267.97" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="8"/>
+<pinref part="SPI_2" gate="G$1" pin="8"/>
 <wire x1="271.78" y1="36.83" x2="262.89" y2="36.83" width="0.1524" layer="91"/>
 <label x="267.97" y="36.83" size="1.778" layer="95"/>
 </segment>
@@ -6555,94 +6558,94 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="A8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA8"/>
+<pinref part="U1" gate="G$1" pin="PA8"/>
 <wire x1="107.95" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <label x="113.03" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA4"/>
+<pinref part="U1" gate="G$1" pin="PA4"/>
 <wire x1="62.23" y1="22.86" x2="62.23" y2="16.51" width="0.1524" layer="91"/>
 <label x="62.23" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="6"/>
+<pinref part="PORT_A" gate="G$1" pin="6"/>
 <wire x1="271.78" y1="-5.08" x2="262.89" y2="-5.08" width="0.1524" layer="91"/>
 <label x="267.97" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA5"/>
+<pinref part="U1" gate="G$1" pin="PA5"/>
 <wire x1="64.77" y1="16.51" x2="64.77" y2="22.86" width="0.1524" layer="91"/>
 <label x="64.77" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="9"/>
+<pinref part="PORT_A" gate="G$1" pin="9"/>
 <wire x1="238.76" y1="-10.16" x2="247.65" y2="-10.16" width="0.1524" layer="91"/>
 <label x="238.76" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA6"/>
+<pinref part="U1" gate="G$1" pin="PA6"/>
 <wire x1="67.31" y1="16.51" x2="67.31" y2="22.86" width="0.1524" layer="91"/>
 <label x="67.31" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="8"/>
+<pinref part="PORT_A" gate="G$1" pin="8"/>
 <wire x1="271.78" y1="-7.62" x2="262.89" y2="-7.62" width="0.1524" layer="91"/>
 <label x="267.97" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA7"/>
+<pinref part="U1" gate="G$1" pin="PA7"/>
 <wire x1="69.85" y1="16.51" x2="69.85" y2="22.86" width="0.1524" layer="91"/>
 <label x="69.85" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="10"/>
+<pinref part="PORT_A" gate="G$1" pin="10"/>
 <wire x1="271.78" y1="-10.16" x2="262.89" y2="-10.16" width="0.1524" layer="91"/>
 <label x="267.97" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC4"/>
+<pinref part="U1" gate="G$1" pin="PC4"/>
 <wire x1="72.39" y1="16.51" x2="72.39" y2="22.86" width="0.1524" layer="91"/>
 <label x="72.39" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="C5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC5"/>
+<pinref part="U1" gate="G$1" pin="PC5"/>
 <wire x1="74.93" y1="16.51" x2="74.93" y2="22.86" width="0.1524" layer="91"/>
 <label x="74.93" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="B1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB1"/>
+<pinref part="U1" gate="G$1" pin="PB1"/>
 <wire x1="80.01" y1="16.51" x2="80.01" y2="22.86" width="0.1524" layer="91"/>
 <label x="80.01" y="16.51" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="4"/>
+<pinref part="SPI_2" gate="G$1" pin="4"/>
 <wire x1="271.78" y1="41.91" x2="262.89" y2="41.91" width="0.1524" layer="91"/>
 <label x="267.97" y="41.91" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B10" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB10"/>
+<pinref part="U1" gate="G$1" pin="PB10"/>
 <wire x1="85.09" y1="16.51" x2="85.09" y2="22.86" width="0.1524" layer="91"/>
 <label x="85.09" y="15.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <label x="133.35" y="121.92" size="1.778" layer="95"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="BTN1" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="121.92" x2="133.35" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="153.67" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="129.54" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
@@ -6650,71 +6653,71 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="C9" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC9"/>
+<pinref part="U1" gate="G$1" pin="PC9"/>
 <wire x1="116.84" y1="55.88" x2="107.95" y2="55.88" width="0.1524" layer="91"/>
 <label x="113.03" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC8"/>
+<pinref part="U1" gate="G$1" pin="PC8"/>
 <wire x1="116.84" y1="53.34" x2="107.95" y2="53.34" width="0.1524" layer="91"/>
 <label x="113.03" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC7"/>
+<pinref part="U1" gate="G$1" pin="PC7"/>
 <wire x1="116.84" y1="50.8" x2="107.95" y2="50.8" width="0.1524" layer="91"/>
 <label x="113.03" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="C6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC6"/>
+<pinref part="U1" gate="G$1" pin="PC6"/>
 <wire x1="116.84" y1="48.26" x2="107.95" y2="48.26" width="0.1524" layer="91"/>
 <label x="113.03" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB15"/>
+<pinref part="U1" gate="G$1" pin="PB15"/>
 <wire x1="116.84" y1="45.72" x2="107.95" y2="45.72" width="0.1524" layer="91"/>
 <label x="113.03" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="6"/>
+<pinref part="SPI_2" gate="G$1" pin="6"/>
 <wire x1="271.78" y1="39.37" x2="262.89" y2="39.37" width="0.1524" layer="91"/>
 <label x="267.97" y="39.37" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB14"/>
+<pinref part="U1" gate="G$1" pin="PB14"/>
 <wire x1="116.84" y1="43.18" x2="107.95" y2="43.18" width="0.1524" layer="91"/>
 <label x="113.03" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="7"/>
+<pinref part="SPI_2" gate="G$1" pin="7"/>
 <wire x1="238.76" y1="36.83" x2="247.65" y2="36.83" width="0.1524" layer="91"/>
 <label x="238.76" y="36.83" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB13"/>
+<pinref part="U1" gate="G$1" pin="PB13"/>
 <wire x1="116.84" y1="40.64" x2="107.95" y2="40.64" width="0.1524" layer="91"/>
 <label x="113.03" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="5"/>
+<pinref part="SPI_2" gate="G$1" pin="5"/>
 <wire x1="238.76" y1="39.37" x2="247.65" y2="39.37" width="0.1524" layer="91"/>
 <label x="238.76" y="39.37" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="2"/>
+<pinref part="VIN" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="295.91" y1="50.8" x2="322.58" y2="50.8" width="0.1524" layer="91"/>
 <label x="302.26" y="50.8" size="1.778" layer="95"/>
@@ -6754,19 +6757,19 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="D2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD2"/>
+<pinref part="U1" gate="G$1" pin="PD2"/>
 <wire x1="80.01" y1="91.44" x2="80.01" y2="100.33" width="0.1524" layer="91"/>
 <label x="80.01" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="B0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB0"/>
+<pinref part="U1" gate="G$1" pin="PB0"/>
 <wire x1="77.47" y1="22.86" x2="77.47" y2="16.51" width="0.1524" layer="91"/>
 <label x="77.47" y="13.97" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="3"/>
+<pinref part="SPI_2" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="41.91" x2="247.65" y2="41.91" width="0.1524" layer="91"/>
 <label x="238.76" y="41.91" size="1.778" layer="95"/>
 </segment>
@@ -6774,18 +6777,18 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="J2" gate="G$1" pin="VCC"/>
+<pinref part="USB" gate="G$1" pin="VCC"/>
 <wire x1="147.32" y1="39.37" x2="147.32" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A10" class="0">
 <segment>
-<pinref part="JP4" gate="G$1" pin="9"/>
+<pinref part="PORT_B" gate="G$1" pin="9"/>
 <wire x1="238.76" y1="11.43" x2="247.65" y2="11.43" width="0.1524" layer="91"/>
 <label x="238.76" y="11.43" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA10"/>
+<pinref part="U1" gate="G$1" pin="PA10"/>
 <wire x1="120.65" y1="63.5" x2="107.95" y2="63.5" width="0.1524" layer="91"/>
 <label x="114.3" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -6793,11 +6796,13 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <net name="B2" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="135.89" y1="19.05" x2="135.89" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="19.05" x2="135.89" y2="24.13" width="0.1524" layer="91"/>
 <label x="135.89" y="19.05" size="1.778" layer="95" rot="R90"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="24.13" x2="135.89" y2="24.13" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB2"/>
+<pinref part="U1" gate="G$1" pin="PB2"/>
 <wire x1="82.55" y1="22.86" x2="82.55" y2="16.51" width="0.1524" layer="91"/>
 <label x="82.55" y="13.97" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -6809,19 +6814,19 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="149.86" y="19.05" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB4"/>
+<pinref part="U1" gate="G$1" pin="PB4"/>
 <wire x1="74.93" y1="100.33" x2="74.93" y2="91.44" width="0.1524" layer="91"/>
 <label x="74.93" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="B3" class="0">
 <segment>
-<pinref part="JP4" gate="G$1" pin="10"/>
+<pinref part="PORT_B" gate="G$1" pin="10"/>
 <wire x1="271.78" y1="11.43" x2="262.89" y2="11.43" width="0.1524" layer="91"/>
 <label x="267.97" y="11.43" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB3"/>
+<pinref part="U1" gate="G$1" pin="PB3"/>
 <wire x1="77.47" y1="91.44" x2="77.47" y2="100.33" width="0.1524" layer="91"/>
 <label x="77.47" y="95.25" size="1.778" layer="95" rot="R90"/>
 </segment>
