@@ -2371,7 +2371,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <parts>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="SILK_FEMALE_PTH"/>
-<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="PTH"/>
+<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="SW1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
@@ -2430,19 +2430,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
-<wire x1="0" y1="58.42" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
 <label x="-7.62" y="58.42" size="1.778" layer="95"/>
 <wire x1="0" y1="58.42" x2="0" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="0" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
 <label x="5.08" y="66.04" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
+<wire x1="-10.16" y1="60.96" x2="0" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
-<wire x1="-2.54" y1="60.96" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
 <label x="-7.62" y="60.96" size="1.778" layer="95"/>
 <wire x1="-2.54" y1="60.96" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="8"/>
@@ -2450,6 +2448,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <label x="30.48" y="58.42" size="1.778" layer="95"/>
 <wire x1="-2.54" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="53.34" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="4"/>
+<wire x1="-2.54" y1="60.96" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
