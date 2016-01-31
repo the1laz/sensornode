@@ -1,0 +1,6 @@
+Port B at 14x36 and 90deg
+Port A at 26x4 and 270deg
+SPI at 36x15.5 and 180deg
+Serial at 2.8x21.3 and 270deg
+0.1 to 39.9
+drill holes at 4x4, 3.4mm

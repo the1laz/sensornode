@@ -1,0 +1,25 @@
+Partlist
+
+Exported from v1.brd at 17/10/2015 12:15 PM
+
+EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value                   Package                  Library             Position (mm)         Orientation
+
+C1                               0805                     SparkFun-Capacitors (9.82 14.91)          R0
+C2                               0805                     SparkFun-Capacitors (9.77 9.98)           R0
+D1                               SOD323                   zetex               (30.37 15.26)         R180
+JP1                              1X06                     SparkFun-Connectors (2.8 21.3)            R270
+JP2                              AVR_ICSP                 SparkFun-Connectors (36 15.5)             R180
+JP3                              AVR_ICSP                 SparkFun-Connectors (26 4)                R270
+K1       TS-1109                 SW4-6.0X6.0X5.0MM        Seeed-OPL-Button    (36.21 27.85)         R270
+K2       TS-1109                 SW4-6.0X6.0X5.0MM        Seeed-OPL-Button    (13.51 4.51)          R180
+R1                               0805                     SparkFun-Passives   (5.79 31.19)          R270
+R2                               0805                     SparkFun-Passives   (5.73 27.78)          R270
+R3                               0805                     SparkFun-Passives   (29.96 26.11)         R270
+R4                               0805                     SparkFun-Passives   (30.08 19.64)         R270
+R5                               0805                     SparkFun-Passives   (29.95 22.81)         R90
+SJ1      JUMPER-PAD-3-NOYES_SILK PAD-JUMPER-3-NO_YES_SILK SparkFun-Passives   (23.22 8.53)          R0
+U$1      ESP-07/12_ESP-12E       ESP-07/12                ESP-12E             (10.43 17.54)         R0
