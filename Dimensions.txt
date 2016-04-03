@@ -1,6 +1,36 @@
 Port B at 14x36 and 90deg
+Port B Power at 27.97x36
 Port A at 26x4 and 270deg
+Port A Power at 12.03x4
 SPI at 36x15.5 and 180deg
 Serial at 2.8x21.3 and 270deg
 0.1 to 39.9
 drill holes at 4x4, 3.4mm
+
+
+Port:
+---------------------------
+| .. 2 4     9 7 5 3 1 .. |
+| '' 1 3    10 8 6 4 2 '' |
+---------------------------
+
+Pins:
+-Sensor Port
+1  G
+2  INT
+3  V
+4  COM
+5  SCL
+6  A1
+7  SDA
+8  A2
+9  D1
+10 D2
+
+
+-Power Port
+1  G
+2  Vcom
+3  Vbus
+4  Vbat
+
