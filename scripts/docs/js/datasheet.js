@@ -178,10 +178,14 @@ var data;
 var get = {};
 //window.location.search.slice(1).split("&").forEach(function(d){var a = d.split("=");get[a[0]] = a[1]});
 
-//if(typeof get.board != "undefined") {
+var parameters = {};
+location.search.slice(1).split('&').forEach(function(part){
+  var item = part.split('=');
+  parameters[item[0]] = item[1];
+})
+//console.log(parameters);
 
-//var element = json.shape.elements[0];
-d3.json('board.json',function(error, response) {
+d3.json('boards/'+parameters['board']+'/board.json',function(error, response) {
 //d3.json('../'+get.board+'/board.json',function(error, response) {
   if (error) return console.warn(error);
   data = response;

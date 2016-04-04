@@ -16,9 +16,9 @@ gulp.task('build',function() {
   gulp.src('docs/**/*').pipe(gulp.dest('pages'));
   var folders = getFolders('../boards');
   folders.map(function(folder){
-    console.log(path.join('../boards',folder,'datasheet')));
+    return gulp.src(path.join('../boards',folder,'datasheet/board.json')).pipe(gulp.dest(path.join('pages/datasheet/boards',folder)));
   });
-  file('boards.json','{boards:[\'Model A\']}',{src:true}).pipe(gulp.dest('pages/datasheet'));
+  file('boards.json',JSON.stringify({'boards':fs.readdirSync('pages/datasheet/boards')}),{src:true}).pipe(gulp.dest('pages/datasheet'));
 });
 
 
@@ -26,7 +26,7 @@ gulp.task('build',function() {
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
+  return gulp.src("./pages/**/*")
 .pipe(deploy())
 //  return gutil.log('Gulp is running!')
 });
